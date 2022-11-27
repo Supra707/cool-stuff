@@ -25,20 +25,16 @@ while(i!=n):
         print(l1)
         for j in range(0,len(l)):
             for i in range(0,len(l1)):
-                count=0 
+                count1=0 
                 if(l1[i] in l[j]):
-                    count=count+1
-                if(count==len(l1)):
+                    count1=count1+1
+                if(count1==len(l1)):
                     print(l[j])
         l1.clear()
     elif(count==len(compuchoice)):
         print("Guessed it right")
     
 i=i+1
-
-
-
-
 
 
 
