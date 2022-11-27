@@ -10,9 +10,10 @@ compuchoice=l[randchoice]
 print(compuchoice)
 n=int(input("Enter the number of users guesses: "))
 i=1
-count=0
+
 l1=[]
 while(i!=n):
+    count=0
     user=input("User,enter your guess: ")
     for j in compuchoice:
         if(j in user):
