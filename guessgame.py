@@ -9,10 +9,10 @@ randchoice=random.randint(0,len(l)-1)
 compuchoice=l[randchoice]
 print(compuchoice)
 n=int(input("Enter the number of users guesses: "))
-i=1
+k=1
 
 l1=[]
-while(i!=n):
+while(k<=n):
     count=0
     user=input("User,enter your guess: ")
     for j in compuchoice:
@@ -21,6 +21,7 @@ while(i!=n):
             count=count+1
     if(count==0):
         print("."*len(user))
+
     elif(count<len(compuchoice) or count>len(compuchoice)):
         print("The matching letters are: ")
         print(l1)
@@ -32,10 +33,10 @@ while(i!=n):
                 if(count1==len(l1)):
                     print(l[j])
         l1.clear()
-    elif(count==len(compuchoice)):
+    elif(compuchoice==user):
         print("Guessed it right")
+        l1.clear()
     
-i=i+1
-
+    k=k+1
 
 
