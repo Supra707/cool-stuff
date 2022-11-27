@@ -26,17 +26,22 @@ while(k<=n):
         print("The matching letters are: ")
         print(l1)
         for j in range(0,len(l)):
+            count1=0 
             for i in range(0,len(l1)):
-                count1=0 
+                
                 if(l1[i] in l[j]):
                     count1=count1+1
-                if(count1==len(l1)):
-                    print(l[j])
+            if(count1==len(l1)):
+                print(l[j])
         l1.clear()
     elif(compuchoice==user):
         print("Guessed it right")
         l1.clear()
     
     k=k+1
+
+
+
+
 
 
